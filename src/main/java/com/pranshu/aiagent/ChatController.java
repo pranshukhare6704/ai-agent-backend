@@ -5,10 +5,9 @@ import com.pranshu.aiagent.dto.ChatResponse;
 import org.springframework.web.bind.annotation.*;
 import com.pranshu.aiagent.service.ChatService;
 
-import java.util.Map;
-
 @RestController
 @RequestMapping("/api/chat")
+@CrossOrigin(origins = "*") 
 public class ChatController {
 
     private final ChatService chatService;
